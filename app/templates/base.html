@@ -14,26 +14,25 @@
 
 </head>
 
-<body>
-    {% include 'components/_header.html' %}
-    
-    <div class="container-fluid">
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        {% include 'components/_header.html' %}  
+    </header>
+    <div class="container-fluid flex-grow-1">
         <div class="row">
-            <div class="col-2 vh-100">
+            <aside class="col-2">
                 {% include 'components/_sidebar.html' %}
-            </div>
-            <div class="col-10 py-3">
+            </aside>
+            <main class="col-10 py-3">
                 <div class="container mt-4">
-                    <main>
-                        {% block content %}
-                        {% endblock %}
-                    </main>
+                    {% block content %}
+                    {% endblock %}
                 </div>
-            </div>
+            </main>
         </div>
     </div>
-    
-    {% include 'components/_footer.html' %}
-
+    <footer>
+        {% include 'components/_footer.html' %}
+    </footer>
 </body>
 </html>
