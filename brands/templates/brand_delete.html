@@ -9,13 +9,11 @@
             <form method="post">
                 {% csrf_token %}
                 <button type="submit" class="btn btn-danger mt-3">Deletar</button>
+                <a href="{% url 'brand_list' %}" class="btn btn-secondary mt-3">Cancelar</a>
             </form>
-            <a href="{% url 'brand_list' %}" class="btn btn-secondary mt-3">Cancelar</a>
-
         </div>
-
     </div>
-
+    
 </div>
 
 {% endblock %}
