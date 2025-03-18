@@ -2,10 +2,10 @@ from django import forms
 from . import models
 
 
-class BrandForm(forms.ModelForm):
+class SupplierForm(forms.ModelForm):
 
     class Meta:
-        model = models.Brand
+        model = models.Supplier
         fields = ['name', 'description']
         widgets = {
             'name': forms.TextInput(attrs={'class': 'form-control'}),
