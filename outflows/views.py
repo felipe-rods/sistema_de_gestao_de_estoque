@@ -1,5 +1,5 @@
 from django.urls import reverse_lazy
-from django.views.generic import ListView, CreateView, DetailView, UpdateView, DeleteView
+from django.views.generic import ListView, CreateView, DetailView
 from . import models, forms
 
 
@@ -23,7 +23,7 @@ class OutflowCreateView(CreateView):
     model = models.Outflow
     template_name = 'outflow_create.html'
     form_class = forms.OutflowForm
-    success_url = reverse_lazy('inflow_list')
+    success_url = reverse_lazy('outflow_list')
 
 
 class OutflowDetailView(DetailView):
