@@ -8,7 +8,7 @@ class OutflowListView(ListView):
     model = models.Outflow
     template_name = 'outflow_list.html'
     context_object_name = 'outflows'
-    paginate_by = 7
+    paginate_by = 10
 
     def get_queryset(self):
         queryset = super().get_queryset()

@@ -7,7 +7,7 @@ class CategoryListView(ListView):
     model = models.Category
     template_name = 'category_list.html'
     context_object_name = 'categories'
-    paginate_by = 7
+    paginate_by = 10
 
     def get_queryset(self):
         queryset = super().get_queryset()
