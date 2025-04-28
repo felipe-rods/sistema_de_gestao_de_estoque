@@ -31,7 +31,6 @@ def get_sales_metrics():
     total_sales_cost = sum(outflow.quantity * outflow.product.cost_price for outflow in Outflow.objects.all())
     total_sales_profit = total_sales_value - total_sales_cost
 
-
     return dict(
         total_sales=total_sales,
         total_sold_products=total_sold_products,
