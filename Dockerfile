@@ -10,7 +10,7 @@ COPY . .
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-RUN python manage.py migrate
+# RUN python manage.py migrate
 
 EXPOSE 8000
 
