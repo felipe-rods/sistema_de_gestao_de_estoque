@@ -210,6 +210,17 @@ O usuário e senha para login são os mesmos cadastrados para o superusuário. P
 - `api/v1/outflows/{id}/`
   - Descrição: endpoint da API. Visualiza, atualiza ou exclui uma saída existente (GET, PUT e DELETE).
 
+<h4>Autenticação</h4>
+
+- `api/v1/authentication/token/`
+  - Descrição: endpoint da API. Gera um novo token de acesso.
+
+- `api/v1/authentication/token/refresh/`
+  - Descrição: endpoint da API. Gera um novo token de acesso utilizando um token de refresh válido.
+
+- `api/v1/authentication/token/verify/`
+  - Descrição: endpoint da API. Verifica a validade de um token de acesso.
+
 <h2 id="contribute">📫 Contribuições</h2>
 
 Agradecemos o seu interesse em contribuir! Siga estas etapas:
