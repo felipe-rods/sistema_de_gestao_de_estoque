@@ -243,9 +243,9 @@ git push origin nome-da-branch
 
 <h3>Documentações que podem ajudar</h3>
 
-[📝 How to create a Pull Request](https://www.atlassian.com/br/git/tutorials/making-a-pull-request)
+[📝 Como criar um Pull Request](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
 
-[💾 Commit pattern](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716)
+[💾 Padrões de commit](https://github.com/iuricode/padroes-de-commits)
 
 <h3>Licença</h3>
 
